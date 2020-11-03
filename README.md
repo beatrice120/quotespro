@@ -5,7 +5,7 @@ this application will be allowing the users of it to create their own quote they
 
 
 ## Link for the Application 
- https://beatrice120.github.io/quotespro/
+http://localhost:4200/
 ## Requirements (for Users)
 
 *  user of the appliaction may create his/her own quotes
