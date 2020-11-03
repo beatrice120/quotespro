@@ -28,9 +28,9 @@ this application will be allowing the users of it to create their own quote they
  4. node
 
 
+
 ## Known Bugs
 none
-
 
 
 ## Support and Contact Details
