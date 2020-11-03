@@ -17,8 +17,15 @@
       <p id="{{i}}">Submitted {{ myquote.timeCreated | timeCount }} from now</p>
       
         
-      <button   style="font-size: 20px; background-color: darkred;" (click)="adding(i)">Upvote</button>
+      
+      
+      <button style="font-size: 20px; background-color: darkred;" (click)="adding(i)">Upvote</button>
+      
+      
       <button style="font-size: 20px; background-color: green;" (click)="removing(i)">Downvote</button>
+      
+      <button style="font-size: 20px;background-color: green;" (click)="removing(i)">Downvote</button> 
+      
       <app-quote-details [quote]='myquote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
     </div>
  
