@@ -21,14 +21,13 @@ this application will be allowing the users of it to create their own quote they
 5. Your project must be deployed and a link to the deployed website should be submitted.
 6. Your project should have regular, well-defined commits with clear messages.
 
-## Technologies Used
- 1. angular
+
+
+## Technologies Used in Application
+1. angular
  2. custom css
  3. bootstrap 
  4. node
-
-
-
 ## Known Bugs
 none
 
