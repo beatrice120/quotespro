@@ -8,8 +8,8 @@
 
 
  
-  
     <div *ngFor="let myquote of theQuotes; let i = index">
+    
       <p appHighlight *ngIf="myquote.votes === count && myquote.votes>0"> {{ myquote.quote }} </p>
       <p id="{{i}}"> {{ myquote.quote }} </p>
       <p id={{i}}>-{{ myquote.author }}</p>
