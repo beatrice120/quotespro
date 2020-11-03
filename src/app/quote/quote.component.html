@@ -1,0 +1,28 @@
+<div id="ses">
+  
+    <h1 class="veg"> world of Quotes</h1>
+ 
+</div>
+<br><br><br>
+<div class="form">
+
+
+ 
+  
+    <div *ngFor="let myquote of theQuotes; let i = index">
+      <p appHighlight *ngIf="myquote.votes === count && myquote.votes>0"> {{ myquote.quote }} </p>
+      <p id="{{i}}"> {{ myquote.quote }} </p>
+      <p id={{i}}>-{{ myquote.author }}</p>
+      <p id={{i}}>{{ myquote.person }}</p>
+      <p id="{{i}}">Submitted {{ myquote.timeCreated | timeCount }} from now</p>
+      
+        
+      <button   style="font-size: 20px; background-color: darkred;" (click)="adding(i)">Upvote</button>
+      <button style="font-size: 20px; background-color: green;" (click)="removing(i)">Downvote</button>
+      <app-quote-details [quote]='myquote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+    </div>
+ 
+
+    <app-quote-form (sendQuote)="receiveQuote($event)"></app-quote-form>
+
+</div>

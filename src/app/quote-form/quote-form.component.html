@@ -1,0 +1,33 @@
+<div class="form-entry"><br><br><br><br>
+    <h1 style="color: orange;">Insert your Quotes in the following form!!!!</h1>
+    <hr>
+    <div class="table" style="background-image: url(https://img.freepik.com/free-photo/room-with-concrete-floor-smoke-background_9083-2991.jpg?size=626&ext=jpg); background-repeat: no-repeat; float: center;">
+      <div class="row">
+        <form (ngSubmit)='getQuotes(quotesForm)' #quotesForm='ngForm'>
+          <div class="form-group">
+            <label for="quote" style="color: white;">Enter your Quote here</label>
+            <textarea name="quote" placeholder="your quote is needed" class="form-control" [(ngModel)]='newQuote.quote' #quote='ngModel' required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="author" style="color: white;">Enter Author Quote names </label>
+            <input type="text" name="author" placeholder="enter author names please" class="form-control" [(ngModel)]='newQuote.author' #author='ngModel' required>
+          </div>
+          <div class="form-group">
+            <label for="name" style="color: white;">Enter your names :</label>
+            <input type="text" name="name" placeholder="enter your names dear " class="form-control" [(ngModel)]='newQuote.name' #person='ngModel' required>
+          </div>
+  
+          <div class="form-group">
+            <label for="timeCreated" style="color: white;">Date</label>
+            <input type="date" class="form-control" id="timeCreated" [(ngModel)]="newQuote.timeCreated" name="timeCreated" #timeCreated="ngModel" required>
+    
+    
+  
+          </div>
+   <br><br>
+          <button type="submit" class="btn btn-danger">Send Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
