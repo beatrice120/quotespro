@@ -7,7 +7,8 @@
         <div class="row">
             <form (ngSubmit)='getQuotes(quotesForm)' #quotesForm='ngForm'>
        
-          <div class="form-group">
+          
+              <div class="form-group">
             <label for="quote" style="color: white;">Enter your Quote here</label>
             <textarea name="quote" placeholder="your quote is needed" class="form-control" [(ngModel)]='newQuote.quote' #quote='ngModel' required></textarea>
           </div>
