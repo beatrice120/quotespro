@@ -10,7 +10,8 @@ export class QuoteFormComponent implements OnInit {
   
   @Output() sendQuote = new EventEmitter<any>();
   
-  newQuote = new Quote("","","",new Date());
+  
+  newQuote= new Quote("","","",new Date());
 
   getQuotes(get){
     var sendingQuote
@@ -20,6 +21,7 @@ export class QuoteFormComponent implements OnInit {
     get.reset();
   }
   constructor() { }
+ 
 
   ngOnInit() {
   }
