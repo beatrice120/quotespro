@@ -11,6 +11,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
  
   theQuotes=[new Quote("“Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.” ","Beatrice Sh","owner",new Date(2020,1,11))]
+  
 
   deleteQuote(isComplete,index) {
     this.theQuotes.splice(index,1);
