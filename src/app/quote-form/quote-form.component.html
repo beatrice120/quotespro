@@ -5,7 +5,8 @@
      
      <div class="table" style="background-image: url(https://img.freepik.com/free-photo/room-with-concrete-floor-smoke-background_9083-2991.jpg?size=626&ext=jpg); background-repeat: no-repeat; float: center;"></div>">
         <div class="row">
-        <form (ngSubmit)='getQuotes(quotesForm)' #quotesForm='ngForm'>
+            <form (ngSubmit)='getQuotes(quotesForm)' #quotesForm='ngForm'>
+       
           <div class="form-group">
             <label for="quote" style="color: white;">Enter your Quote here</label>
             <textarea name="quote" placeholder="your quote is needed" class="form-control" [(ngModel)]='newQuote.quote' #quote='ngModel' required></textarea>
